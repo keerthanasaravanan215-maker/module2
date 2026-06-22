@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Page</title>
+    <style>
+        body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:40px;background:#f9f9f9;color:#222}
+        header{display:flex;justify-content:space-between;align-items:center}
+        nav a{margin:0 8px;color:#0366d6;text-decoration:none}
+        main{margin-top:20px}
+        button{padding:8px 12px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav>
+    </header>
+
+    <main>
+        <p>This is a simple HTML page. Edit <code>index.html</code> to start building your site.</p>
+        <button id="greet">Click me</button>
+    </main>
+
+    <script>
+        document.getElementById('greet').addEventListener('click', () => {
+            alert('Hello — your page is ready!');
+        });
+    </script>
+</body>
+</html>
